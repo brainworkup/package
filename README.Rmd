@@ -6,10 +6,12 @@ output: github_document
 
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(collapse  = TRUE,
-                      comment   = "#>",
-                      fig.path  = "man/figures/",
-                      out.width = "100%")
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/",
+  out.width = "100%"
+)
 ```
 
 
@@ -45,7 +47,7 @@ package <img src="man/figures/package-sticker.png" align="right" style="float:ri
 ## Overview
 
 
-The R package `package`... **{{ DESCRIBE YOUR PACKAGE }}**
+The R package `package`... **{{ is a template to create a structured R package. }}**
 
 
 
@@ -61,12 +63,12 @@ You can install the development version from [GitHub](https://github.com/) with:
 
 ```{r eval=FALSE}
 ## Install < remotes > package (if not already installed) ----
-if (!requireNamespace("remotes", quietly = TRUE)) {
-  install.packages("remotes")
+if (!requireNamespace("pak", quietly = TRUE)) {
+  install.packages("pak")
 }
 
 ## Install < package > from GitHub ----
-remotes::install_github("brainworkup/package")
+pak::pak("brainworkup/package")
 ```
 
 Then you can attach the package `package`:
@@ -79,7 +81,7 @@ library("package")
 
 ## Get started
 
-For an overview of the main features of `package`, please read the 
+For an overview of the main features of `package`, please read the
 [Get started](https://brainworkup.github.io/package/articles/package.html)
 vignette.
 
@@ -97,21 +99,21 @@ vignette describes the core features of the package
 
 ## Citation
 
-Please cite `package` as: 
+Please cite `package` as:
 
-> Trampush Joey (`r format(Sys.Date(), "%Y")`) package: An R 
-package to **{{ TITLE }}**. R package version 0.0.0.9000. 
+> Trampush Joey (`r format(Sys.Date(), "%Y")`) package: An R
+package to **{{ TITLE }}**. R package version 0.0.0.9000.
 <https://github.com/brainworkup/package/>
 
 
 
 ## Contributing
 
-All types of contributions are encouraged and valued. For more information, 
+All types of contributions are encouraged and valued. For more information,
 check out our [Contributor Guidelines](https://github.com/brainworkup/package/blob/main/CONTRIBUTING.md).
 
-Please note that the `package` project is released with a 
-[Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). 
+Please note that the `package` project is released with a
+[Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
 
 
